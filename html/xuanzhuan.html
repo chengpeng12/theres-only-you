@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>旋转丘比特</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+		}
+		html,body{
+			height:100%;
+		}
+		body{
+			background: url(../images/bg2.jpg)no-repeat;
+			background-size:100% 100%;
+		}
+		section{
+			width:240px;
+			height:360px;
+			border:1px solid gold;
+			position:fixed;
+			top:0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			margin:auto;
+			transform-style: preserve-3d;
+			animation:liuliuliu 60s linear infinite;
+		}
+	
+		@keyframes liuliuliu{
+			0%{
+				transform:rotateX(0deg) rotateY(0deg);
+			}
+			25%{
+				transform:rotateX(20deg) rotateY(180deg);
+			}
+			50%{
+				transform: rotateX(0deg) rotateY(360deg;)
+			}
+			75%{
+				transform:rotateX(-30deg) rotateY(540deg);
+			}
+			100%{
+				transform:rotateX(0deg) rotateY(720deg);
+			}
+			}
+		section img{
+			width:240px;
+			height:360px;
+			display: block;
+			position: absolute;
+		}
+		section img:first-child{
+			transform:translateZ(600PX);
+		}
+		section img:nth-child(2){
+			transform:rotateY(36deg) translateZ(600px);
+		}
+			section img:nth-child(3){
+			transform:rotateY(72deg) translateZ(600px);
+		}
+			section img:nth-child(4){
+			transform:rotateY(108deg) translateZ(600px);
+		}
+			section img:nth-child(5){
+			transform:rotateY(144deg) translateZ(600px);
+		}
+			section img:nth-child(6){
+			transform:rotateY(180deg) translateZ(600px);
+		}
+			section img:nth-child(7){
+			transform:rotateY(216deg) translateZ(600px);
+		}
+			section img:nth-child(8){
+			transform:rotateY(252deg) translateZ(600px);
+		}
+			section img:nth-child(9){
+			transform:rotateY(288deg) translateZ(600px);
+		}
+			section img:nth-child(10){
+			transform:rotateY(324deg) translateZ(600px);
+		}
+
+
+	</style>
+</head>
+<body>
+	<section>
+		<img src="../images/pic1.jpg" alt="">
+		<img src="../images/pic2.png" alt="">
+		<img src="../images/pic3.png" alt="">
+		<img src="../images/pic4.png" alt="">
+		<img src="../images/pic5.jpg" alt="">
+		<img src="../images/pic6.png" alt="">
+		<img src="../images/pic7.png" alt="">
+		<img src="../images/pic8.png" alt="">
+		<img src="../images/pic9.png" alt="">
+		<img src="../images/pic10.png" alt="">
+	</section>
+	<audio  controls autoplay>
+         <source src="../audio/zuimei.mp3" />
+         Your browser does not support the audio element.
+	</audio>
+
+</body>
+</html>
